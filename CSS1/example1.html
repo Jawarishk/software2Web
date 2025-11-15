@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/Style.css" rel="stylesheet">
+</head>
+<body>
+<p>Some text</p>
+<p><a href="https://metropolia.fi" id="id-example">Example link</a></p>
+
+<p>Some more text with <span class="class-example">blue</span> word.</p>
+
+</body><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malik Watches</title>
+    <link rel="stylesheet" href="style.css">
+</head><!DOCTYPE html>
+<html lang="en">
+<head><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malik Watches</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #444;
+            border-radius: 4px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .page {
+            display: none;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin: 20px 0 15px;
+        }
+
+        /* Home page */
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .feature {
+            flex-basis: 30%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Products page */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product {
+            flex-basis: 30%;
+            margin-bottom: 30px;
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Contact page */
+        .contact-info {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .map {
+            width: 100%;
+            height: 300px;
+            background-color: #e9e9e9;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .feature, .product {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Malik Watches</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="products">Products</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <h1>Welcome to Malik Watches</h1>
+                <p>Quality watches at affordable prices</p>
+            </div>
+
+            <h2>Why Choose Us?</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Quality</h3>
+                    <p>We use the best materials for our watches</p>
+                </div>
+                <div class="feature">
+                    <h3>Affordable</h3>
+                    <p>Great prices for premium quality</p>
+                </div>
+                <div class="feature">
+                    <h3>Fast Delivery</h3>
+                    <p>Quick shipping to your doorstep</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Page -->
+        <section id="products" class="page">
+            <h1>Our Watch Collection</h1>
+            <div class="products">
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Classic Watch">
+                    <h3>Classic Watch</h3>
+                    <p>Elegant design for everyday use</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1547996160-81dfd9c4b1b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Sport Watch">
+                    <h3>Sport Watch</h3>
+                    <p>Durable and water-resistant</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1526045431048-f857369baa09?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Luxury Watch">
+                    <h3>Luxury Watch</h3>
+                    <p>Premium materials and design</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <h1>Contact Us</h1>
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p><strong>Name:</strong> Malik Ali Jawarish</p>
+                <p><strong>Address:</strong> Kilobranten, Espoo, Finland</p>
+                <p><strong>Email:</strong> me.alijawarish13@gmail.com</p>
+                <p><strong>Phone:</strong> +358 458526855</p>
+            </div>
+
+            <h2>Our Location</h2>
+            <div class="map">
+                Espoo, Finland Map
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Malik Watches</p>
+    </footer>
+
+    <script>
+        // Simple navigation
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Hide all pages
+                document.querySelectorAll('.page').forEach(page => {
+                    page.classList.remove('active');
+                });
+
+                // Show clicked page
+                const pageId = this.getAttribute('data-page');
+                document.getElementById(pageId).classList.add('active');
+
+                // Update active link
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
